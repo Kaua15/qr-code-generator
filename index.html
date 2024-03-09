@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qr Code Generator - Kauã Lima</title>
+    <link rel="shortcut icon" href="qrcode-solid.svg" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="https://kit.fontawesome.com/e2f0f61eff.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- <div id="qrcode"></div> -->
+
+    <section class="container">
+        <div class="header">
+            <div class="title">
+                <h1>QR Code </br>Generator</h1>
+            </div>
+            <div class="line"></div>
+            <div class="options">
+                <div class="option">
+                    <span>(Black)</span>
+                    <input type="color" name="black" id="black" value="#000000">
+                </div>
+                <div class="option">
+                    <span>(White)</span>
+                    <input type="color" name="white" id="white" value="#FFFFFF">
+                </div>
+                <div class="option">
+                    <span>Size</span>
+                    <select name="size" id="size">
+                        <option value="100">100x100</option>
+                        <option value="200">200x200</option>
+                        <option value="300">300x300</option>
+                        <option value="400">400x400</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="input">
+            <input type="text" name="inputQrCode" id="inputQrCode" placeholder="Type here">
+        </div>
+        <div class="qrCode">
+            <div class="qr" id="qrcode"></div>
+        </div>
+
+        <div class="buttons">
+            <button class="generateBtn btn">GENERATE</button>
+            <button class="downloadBtn btn" disable>
+                <a download="QRCode">
+                    <span>Download</span>
+                    <i class="fa-solid fa-circle-down"></i>
+                </a>
+            </button>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
